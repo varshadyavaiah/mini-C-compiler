@@ -17,7 +17,7 @@ nid [0-9][a-zA-Z]+
 
 %%
 \n	n++;
-{wspaces}	printf("%d white space\n",n);
+{wspaces} printf("%d white space\n",n);
 {comment} printf("%d %s Comment\n",n,yytext);
 {h} printf("%d %s Header\n",n,yytext);
 {key} printf("%d %s Keyword\n",n,yytext);
